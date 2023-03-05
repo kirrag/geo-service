@@ -1,3 +1,5 @@
+package ru.netology.sender;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.util.Set;
@@ -18,7 +20,7 @@ public class MessageSenderImplTest {
 	@Test
 	static void messageSenderImplTest() {
         GeoService geoService = Mockito.mock(GeoServiceImpl.class);
-		Mockito.when(geoService.byIp(GeoServiceImpl.MOSCOW_IP)).thenReturn();
+		//Mockito.when(geoService.byIp("172.0.32.11"));
 
         LocalizationService localizationService = Mockito.mock(LocalizationServiceImpl.class);
 
@@ -46,6 +48,8 @@ public class MessageSenderImplTest {
         String result = messageSender.send(headers);
 
 		String expected = "Добро пожаловать";
+		System.out.println(expected);
+		System.out.println(result);
 
 		Assertions.assertEquals(expected, result);
 		//System.out.println(result);
