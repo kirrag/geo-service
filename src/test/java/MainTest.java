@@ -87,7 +87,10 @@ public class MainTest {
 		} else if (argument.startsWith("96.")) {
 			expectedCountryLocation = new Location("New York", Country.USA, null, 0);
 		}
-		Assertions.assertEquals(expectedCountryLocation, actualCountryLocation);
+		Assertions.assertEquals(expectedCountryLocation.getCity(), actualCountryLocation.getCity());
+		Assertions.assertEquals(expectedCountryLocation.getCountry(), actualCountryLocation.getCountry());
+		Assertions.assertEquals(expectedCountryLocation.getStreet(), actualCountryLocation.getStreet());
+		Assertions.assertEquals(expectedCountryLocation.getBuiling(), actualCountryLocation.getBuiling());
 
 	}
 
