@@ -6,10 +6,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>ru.netology</groupId>
-	<artifactId>MyGeoService</artifactId>
+	<artifactId>geo-service</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
-	<name>MyGeoService</name>
+	<name>geo-service</name>
 	<url>netology.ru</url>
 
 	<properties>
